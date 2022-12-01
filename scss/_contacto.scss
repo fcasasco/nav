@@ -1,0 +1,20 @@
+.iconosContacto{
+    margin-top: 12.5rem;
+}
+
+#contactoFlex{
+    @extend #formFlex;
+}
+
+#contactoFlex h1{
+    margin-top: 7rem;
+}
+
+fieldset{
+    border: solid 0.5rem $color-borde;
+    padding:2rem;
+    div{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}

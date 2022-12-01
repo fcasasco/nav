@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: $fuente-google;
+    background-color: $bg-colorBody;
+}
+
+header{
+    background-color: $bg-colorHeader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index:6;
+    width:100%;
+}
+
+.logo{
+    border: solid $color-marcoLogo;
+}
+
+#ulnav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-right:15rem;
+    gap: 11rem;
+    li{
+        font-size: 1.7rem;
+        font-weight: 1000;
+        a{
+            text-decoration: none;
+            color:$color-anchor;
+            &:hover{
+                background-color: $bg-colorHover;
+                padding: 1.5rem;
+            }
+        }
+    }
+}
+
+.iconosFlex{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    gap: 2rem;
+    font-size: 2rem;
+   
+}
+
+i{
+    color: $color-icon;
+}
+
+h1{
+    font-size: $size-h1;
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-size: $size-h2;
+    text-align: center;
+}
+
+h3{
+    font-size: $size-h3;
+    text-align: center;
+}
+
+footer{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: .9rem;
+    border-style: double;
+    border-width: 0.5rem;
+    border-color: $color-marcoFooter;
+    flex-wrap: wrap;
+}

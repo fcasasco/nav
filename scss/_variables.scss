@@ -1,0 +1,38 @@
+$fuente-google: 'Roboto', sans-serif;
+$size-h1: 2.2rem;
+$size-h2: 2rem;
+$size-h3: 1.6rem;
+$bg-colorBody: rgba(143, 152, 157, 0.6);
+$bg-colorHeader: black;
+$color-marcoLogo: #8f2d56;
+$color-anchor: #5cbcb8;
+$color-icon:black;
+$bg-colorHover: #d81159;
+$color-marcoFooter: #218380;
+$color-borde: #d81159;
+
+@mixin flex-column-txtCenter-wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-column-itemCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin ancho-alto ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+
+
+
+
+
+
+

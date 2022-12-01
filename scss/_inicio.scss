@@ -1,0 +1,52 @@
+#grillaIndex{
+    display: grid;
+    /*declaro columnas*/
+    grid-template-columns: repeat(3,1fr);
+    /*declaro filas*/
+    grid-template-rows: 125px 500px auto 50px;
+    grid-template-areas:
+    "headerIndex headerIndex headerIndex"
+    "carrousel carrousel carrousel"
+    "adoptantes adoptantes adoptantes"
+    "footerIndex footerIndex footerIndex";
+    height: 100vh;
+}
+
+.headerIndex{
+    grid-area: headerIndex;
+}
+
+#carrousel{
+    grid-area: carrousel;
+}
+
+#carouselExampleIndicators{
+    width:22%;
+    margin: 0 auto;
+}
+
+#adoptantes{
+    grid-area: adoptantes;
+}
+
+.adoptantesFotos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.borde{
+    border: solid .5rem $color-borde;
+    padding: 0.5rem;
+}
+
+.testimonioAdoptante{
+    font-size: 1.2rem;
+}
+
+.footerIndex{
+    grid-area: footerIndex;
+}
